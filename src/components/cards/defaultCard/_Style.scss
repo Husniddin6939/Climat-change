@@ -1,0 +1,54 @@
+.default_card {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: inline-block;
+  width: 30%;
+  
+
+  .lineUp {
+    display: flex;
+    align-items: center;
+    gap: 81px;
+
+    .left {
+      span {
+        font-size: 96px;
+        font-weight: 500;
+        color: #4793ff;
+      }
+
+      h2 {
+        font-size: 35px;
+        font-weight: 500;
+      }
+    }
+
+    img {
+      width: 119px;
+      height: 119px;
+    }
+  }
+
+  .lineDown {
+    p {
+      color: #939cb0;
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+}
+
+
+@media(max-width:1200px){
+  .default_card{
+    width: auto;
+    .lineUp{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+    }
+  }
+}
+

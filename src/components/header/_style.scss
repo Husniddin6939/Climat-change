@@ -1,0 +1,59 @@
+header{
+    background-color: bgColor;
+    margin: 20px 0;
+    .container{
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h1{
+                font-size: 25px;
+                font-weight:700;
+                color: #4793FF;
+            }
+        }
+
+        .search{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+
+            input{
+                padding: 9px 20px;
+                border-radius: 10px;
+                border: none;
+                background-color: #4793FF33;
+                outline: #4794ff25;
+
+                :placeholder-shown{
+                    color: black;
+
+                }
+            }
+
+            
+
+        }
+    
+    }
+}
+
+
+@media(max-width:630px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
